@@ -8,4 +8,13 @@
 
 import Foundation
 
-public protocol Action { }
+public protocol Action {
+    var id: String {get set}
+}
+
+extension Action {
+    var id: String {
+      get { return "NOT DEFINED" }
+      set {}
+    }
+}
